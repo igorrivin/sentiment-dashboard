@@ -849,3 +849,11 @@
 {"timestamp": "2025-06-03T14:33:23.925591", "scores": {"AAPL": -0.5, "BTC": 0.0, "ETH": 0.0, "TSLA": -0.3, "ARM": 0.0, "NVDA": 0.0, "MSFT": -0.2, "NFLX": 0.0, "GOOG": -0.4, "AMZN": -0.3}}
 {"timestamp": "2025-06-03T14:38:28.794632", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": -0.1, "ARM": 0.0, "NVDA": -0.15, "MSFT": -0.2, "NFLX": 0.0, "GOOG": -0.3, "AMZN": -0.2}}
 {"timestamp": "2025-06-03T14:43:34.492629", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.15, "NFLX": 0.0, "GOOG": -0.2, "AMZN": -0.15}}
+{"timestamp": "2025-06-03T14:48:39.514660", "scores": {"AAPL": 0.5, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.25, "ARM": 0.0, "NVDA": 0.4, "MSFT": 0.3, "NFLX": 0.6, "GOOG": 0.2, "AMZN": 0.25}}
+{"timestamp": "2025-06-03T14:53:45.140959", "scores": {"AAPL": 0.5, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.3, "ARM": 0.0, "NVDA": 0.4, "MSFT": 0.3, "NFLX": 0.5, "GOOG": 0.3, "AMZN": 0.3}}
+{"timestamp": "2025-06-03T14:58:51.011551", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.15, "NFLX": 0.0, "GOOG": -0.2, "AMZN": -0.15}}
+{"timestamp": "2025-06-03T15:03:56.725460", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": -0.1, "ARM": 0.0, "NVDA": -0.15, "MSFT": -0.2, "NFLX": 0.0, "GOOG": -0.3, "AMZN": -0.2}}
+{"timestamp": "2025-06-03T15:09:01.929795", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.05, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.0}}
+{"timestamp": "2025-06-03T15:14:08.485926", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.15, "NFLX": 0.0, "GOOG": -0.2, "AMZN": -0.15}}
+{"timestamp": "2025-06-03T15:19:13.385136", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.05, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.0}}
+{"timestamp": "2025-06-03T15:24:18.509954", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.05, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.0}}
