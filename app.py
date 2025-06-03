@@ -5,7 +5,7 @@ import plotly.express as px
 from dash import Dash, dcc, html, Input, Output
 
 def load_data():
-    url = "https://raw.githubusercontent.com/igorrivin/sentiment-dashboard/main/data.jsonl"
+    url = "https://raw.githubusercontent.com/igorrivin/sentiment-dashboard/main/sentiment_scores.jsonl"
     r = requests.get(url)
     lines = r.text.strip().splitlines()
     data = [json.loads(line) for line in lines]
