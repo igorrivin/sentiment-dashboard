@@ -35,10 +35,16 @@ def update(n):
     fig.update_layout(showlegend=False)
     fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
 
+    latest_time = df.index[-1].strftime("%Y-%m-%d %H:%M:%S UTC")
     latest = df.iloc[-1].dropna().sort_values(ascending=False)
-    table = html.Table([
-        html.Tr([html.Th("Ticker"), html.Th("Score")])
-    ] + [html.Tr([html.Td(k), html.Td(f"{v:.3f}")]) for k, v in latest.items()])
+    
+    table = html.Div([
+        html.H3(f"Latest Scores (as of {latest_time})"),
+        html.Table([
+            html.Tr([html.Th("Ticker"), html.Th("Score")])
+        ] + [html.Tr([html.Td(k), html.Td(f"{v:.3f}")]) for k, v in latest.items()])
+    ])
+
     return fig, table
 
 if __name__ == "__main__":
