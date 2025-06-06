@@ -857,4 +857,4 @@
 {"timestamp": "2025-06-03T15:14:08.485926", "scores": {"AAPL": -0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.15, "NFLX": 0.0, "GOOG": -0.2, "AMZN": -0.15}}
 {"timestamp": "2025-06-03T15:19:13.385136", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.05, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.0}}
 {"timestamp": "2025-06-03T15:24:18.509954", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.05, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.0}}
-{"timestamp": "2025-06-06T02:12:37.590249", "scores": {"AAPL": -0.25, "BTC": -0.15, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.1, "MSFT": -0.1, "NFLX": 0.0, "GOOG": -0.05, "AMZN": -0.05, "QQQ": -0.2, "DJI": 0.0}}
+{"timestamp": "2025-06-06T02:50:42.548081", "scores": {"AAPL": -0.25, "BTC": -0.15, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": 0.2, "MSFT": -0.1, "NFLX": 0.0, "GOOG": -0.1, "AMZN": -0.1, "QQQ": 0.1, "DJI": 0.0}}
