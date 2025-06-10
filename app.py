@@ -4,7 +4,14 @@ import json
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output
 import dash, flask, os
+from datetime import datetime, timedelta
 
+from supabase import create_client
+
+SUPABASE_URL= os.environ.get("SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
+
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 def load_data():
     url = "https://raw.githubusercontent.com/igorrivin/sentiment-dashboard/main/sentiment_scores.jsonl"
     r = requests.get(url)
@@ -15,6 +22,26 @@ def load_data():
     df["timestamp"] = pd.to_datetime(df["timestamp"])
     df.set_index("timestamp", inplace=True)
     return df
+
+def load_data_df(interval=7):
+    begindate = (datetime.now() - timedelta(days=interval)).isoformat()
+    response = (supabase.table('sentiment_scores') 
+        .select('*') 
+        .gte('timestamp', begindate) 
+        .execute()
+    )
+    data = response.data
+    # Convert to DataFrame and flatten the jsonb column
+    rows = []
+    for row in data:
+        flat_row = {'timestamp': pd.to_datetime(row['timestamp'])}
+        flat_row.update(row['scores'])  # Assumes 'stocks' is the jsonb column
+        rows.append(flat_row)
+
+    df = pd.DataFrame(rows)
+    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df.set_index('timestamp', inplace=True)
+    return df.sort_index()
 
 def score_to_color(score):
     score = max(-1, min(1, score))  # clamp
@@ -45,7 +72,7 @@ app.layout = html.Div(
     Input("interval", "n_intervals")
 )
 def update(n):
-    df = load_data()
+    df = load_data_df()
     df_long = df.reset_index().melt(id_vars="timestamp", var_name="ticker", value_name="score")
     fig = px.line(df_long, x="timestamp", y="score", facet_col="ticker", facet_col_wrap=3)
     fig.update_layout(showlegend=False)
@@ -73,13 +100,7 @@ def update(n):
 
     # 🔍 Log access to Supabase
     try:
-        from supabase import create_client
-        import os
-
-        SUPABASE_URL = os.environ.get("SUPABASE_URL")
-        SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
-
-        supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+        
         supabase.table("visit_logs").insert({
             "timestamp": latest_time,
             "event": "dashboard_refresh"
