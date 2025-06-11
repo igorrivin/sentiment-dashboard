@@ -861,4 +861,4 @@
 {"timestamp": "2025-06-06T10:05:56.883198", "scores": {"AAPL": -0.25, "BTC": -0.3, "ETH": 0.0, "TSLA": 0.0, "ARM": 0.0, "NVDA": -0.2, "MSFT": -0.15, "NFLX": 0.0, "GOOG": -0.1, "AMZN": -0.15, "QQQ": -0.2, "DJI": 0.0}}
 {"timestamp": "2025-06-06T12:16:18.898271", "scores": {"AAPL": 0.25, "BTC": -0.3, "ETH": 0.0, "TSLA": 0.1, "ARM": 0.0, "NVDA": 0.0, "MSFT": 0.4, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.2, "QQQ": -0.15, "DJI": 0.0}}
 {"timestamp": "2025-06-06T12:17:34.820330", "scores": {"AAPL": 0.25, "BTC": -0.3, "ETH": 0.0, "TSLA": 0.1, "ARM": 0.0, "NVDA": 0.0, "MSFT": 0.4, "NFLX": 0.0, "GOOG": 0.0, "AMZN": 0.15, "QQQ": -0.1, "DJI": 0.0}}
-{"timestamp": "2025-06-11T09:07:33.120938", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": -0.1, "ARM": 0.0, "NVDA": 0.15, "MSFT": 0.2, "NFLX": 0.0, "GOOG": 0.3, "AMZN": 0.35, "QQQ": 0.1, "DJI": 0.0}}
+{"timestamp": "2025-06-11T09:20:44.468577", "scores": {"AAPL": 0.25, "BTC": 0.0, "ETH": 0.0, "TSLA": -0.1, "ARM": 0.0, "NVDA": -0.15, "MSFT": 0.1, "NFLX": 0.0, "GOOG": 0.05, "AMZN": 0.05, "QQQ": -0.05, "DJI": 0.0}}
